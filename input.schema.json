@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ecommerce Main Image Strategy Input",
+  "type": "object",
+  "required": [
+    "product_name",
+    "category"
+  ],
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "platform": {
+      "type": "string"
+    },
+    "business_goal": {
+      "type": "string"
+    },
+    "target_audience": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "materials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "use_cases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "customer_pains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "customer_concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competitor_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "differentiators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "after_sales": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

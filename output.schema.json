@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ecommerce Main Image Strategy Output",
+  "type": "object",
+  "required": [
+    "insight",
+    "purchase_reasons",
+    "primary_hook",
+    "images",
+    "score"
+  ],
+  "properties": {
+    "insight": {
+      "type": "object",
+      "required": [
+        "core_user",
+        "click_barrier",
+        "purchase_barrier"
+      ],
+      "properties": {
+        "core_user": {
+          "type": "string"
+        },
+        "main_pain": {
+          "type": "string"
+        },
+        "main_desire": {
+          "type": "string"
+        },
+        "click_barrier": {
+          "type": "string"
+        },
+        "purchase_barrier": {
+          "type": "string"
+        }
+      }
+    },
+    "purchase_reasons": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "reason"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "visual_proof": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "primary_hook": {
+      "type": "object",
+      "required": [
+        "type",
+        "copy"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "pain",
+            "benefit",
+            "contrast",
+            "scene",
+            "emotion",
+            "value_bundle",
+            "trust",
+            "data"
+          ]
+        },
+        "copy": {
+          "type": "string"
+        }
+      }
+    },
+    "images": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "index",
+          "role",
+          "objective",
+          "headline"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "role": {
+            "type": "string"
+          },
+          "shopper_question": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
+          },
+          "supporting_points": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "composition": {
+            "type": "string"
+          },
+          "visual_proof": {
+            "type": "string"
+          },
+          "required_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "risk_note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compliance_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "score": {
+      "type": "object",
+      "required": [
+        "total"
+      ],
+      "properties": {
+        "recognition": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "hook": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "purchase_reason": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "differentiation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "visual_proof": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "hierarchy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "trust_compliance": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "ab_tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "variable": {
+            "type": "string"
+          },
+          "version_a": {
+            "type": "string"
+          },
+          "version_b": {
+            "type": "string"
+          },
+          "primary_metric": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
