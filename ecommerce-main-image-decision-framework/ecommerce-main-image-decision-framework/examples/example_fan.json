@@ -1,0 +1,47 @@
+{
+  "product_name": "桌面循环扇",
+  "category": "小家电/风扇",
+  "platform": "京东",
+  "target_audience": [
+    "宿舍学生",
+    "办公室用户",
+    "卧室用户"
+  ],
+  "features": [
+    "三档风力",
+    "静音",
+    "循环送风",
+    "上下角度调节"
+  ],
+  "parameters": {
+    "noise": "≤XXdB",
+    "power": "XXW"
+  },
+  "use_cases": [
+    "卧室",
+    "书房",
+    "办公室"
+  ],
+  "customer_pains": [
+    "普通小风扇风小",
+    "晚上太吵",
+    "只能对着一个方向吹"
+  ],
+  "customer_concerns": [
+    "噪音是否真实",
+    "风力够不够"
+  ],
+  "differentiators": [
+    "大风力循环送风",
+    "低噪设计"
+  ],
+  "evidence": [
+    "噪音检测数据（待提供）",
+    "风速实测（待提供）"
+  ],
+  "after_sales": [
+    "7天无理由退换",
+    "365天以换代修"
+  ],
+  "business_goal": "提升搜索点击率和详情页转化"
+}
